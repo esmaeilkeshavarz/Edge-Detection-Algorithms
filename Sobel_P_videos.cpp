@@ -1,6 +1,6 @@
-/****************************
-     Sobel edge detection
-*****************************/
+/**********************************************************
+     Sobel edge detection with parallelisation for videos
+**********************************************************/
 
 #include <iostream>
 #include <bits/stdc++.h>
