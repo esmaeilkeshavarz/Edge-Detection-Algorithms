@@ -163,11 +163,8 @@ int main()
         {
             gradient_f.at<uchar>(i,j) = sqrt( pow(gradient_x.at<uchar>(i,j),2) + pow(gradient_y.at<uchar>(i,j),2) );  
         
-             if(gradient_f.at<uchar>(i,j) >250)
-                gradient_f.at<uchar>(i,j) = 150;
-            else
-                gradient_f.at<uchar>(i,j) = 0;
-                
+	     gradient_f.at<uchar>(i,j) = ((gradient_f.at<uchar>(i,j) >250)? (150):(0))
+             
         }
     }
     
