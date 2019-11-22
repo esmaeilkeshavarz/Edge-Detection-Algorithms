@@ -121,11 +121,9 @@ int main()
 
     // Hysterisis Thresholding
     int low=20,high=40;
-
-    if(low > 255)
-        low = 255;
-    if(high > 255)
-        high = 255;
+    low=((low>255)? (255):(low));
+    high=((high>255)? (255):(high));
+    
     
     Mat EdgeMat = Mat(nonMaxSupp.rows, nonMaxSupp.cols, nonMaxSupp.type());
     
